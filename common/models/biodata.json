@@ -1,0 +1,35 @@
+{
+  "name": "biodata",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama": {
+      "type": "string"
+    },
+    "umur": {
+      "type": "number"
+    },
+    "tgl_lahir": {
+      "type": "date"
+    },
+    "jk": {
+      "type": "string"
+    },
+    "id_universitas": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "universitas": {
+      "type": "belongsTo",
+      "model": "universitas",
+      "foreignKey": "id_universitas"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<style>
+		form.form-validation input.ng-dirty.ng-valid {
+ 			 border:1px solid #5cb85c;
+		}
+		form.form-validation input.ng-dirty.ng-invalid {
+ 			border:1px solid #c9302c;
+		}
+	</style>
+</head>
+<body ng-controller="login">
+
+<div class="row">
+
+<p align="center"> HALAMAN LOGIN </p>
+<div align="center">
+<input type="text" ng-model="post.username" >
+</div>
+<div align="center">
+<input type="password" ng-model="post.password" >
+</div>
+<div align="center">
+<button type="button" ng-click="login()">SUBMIT</button>
+</div>
+
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="login.js"></script>
+<script src="service.js"></script>
+</body>
+</html>

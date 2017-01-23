@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql_connect": {
+    "host": "localhost",
+    "port": 0,
+    "url": "",
+    "database": "barang",
+    "password": "toor",
+    "name": "mysql_connect",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 0,
+    "url": "",
+    "database": "crud",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
